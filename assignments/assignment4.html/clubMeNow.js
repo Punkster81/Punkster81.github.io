@@ -83,6 +83,11 @@ function appendTableRows() {
 function displayClubEntry() {
 	
 	alert("sdfsdfsdf");
+	alert("sdfsdfsdf");
+	alert("sdfsdfsdf");
+	alert("sdfsdfsdf");
+	alert("sdfsdfsdf");
+	alert("sdfsdfsdf");
 	window.location.href = "clubEntry.html"; 
 	return false;
 }
