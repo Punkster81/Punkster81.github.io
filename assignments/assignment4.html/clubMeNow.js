@@ -93,6 +93,19 @@ function displayClubDistanceEntryForm(c) {
 // replace the current "clubs" array with the previous one
 function undoLastShot() {
         // your code here !
+	
+	
+	clubs = clubsUndo;
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }
 
 // create a new (default) "clubs" array
@@ -182,8 +195,16 @@ function updateStats(shotDistance=0) {
 		shotDistance = parseInt(document.getElementById('clubVal').value);
 	if(parseInt(shotDistance) > 0) {
 		// save current clubs array for "Undo" functionality
+		
+		
+		
+		
 		let str = JSON.stringify(clubs);
 		localStorage.setItem("clubsUndo", str);
+		
+		
+		
+		
 		// update average
 		currentAverage = clubs[clubRow][3];
 		currentNumShots = clubs[clubRow][6];
