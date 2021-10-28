@@ -97,7 +97,19 @@ function undoLastShot() {
 	
 	clubs = clubsUndo;
 	
+	currentAverage = clubs[clubRow][3];
+		currentNumShots = clubs[clubRow][6];
+		newAverage = (currentAverage * currentNumShots) 
+			/ (currentNumShots); //+1
+		clubs[clubRow][3] = newAverage;
+		// update shot count
 	
+	
+	//	clubs[clubRow][6] += 1;
+	
+	
+		 clubs[clubRow][4] = clubs[clubRow][4]
+		 clubs[clubRow][5] = shotDistance;
 	
 	
 	
