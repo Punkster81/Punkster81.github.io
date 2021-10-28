@@ -111,7 +111,7 @@ function undoLastShot() {
 		 clubs[clubRow][4] = clubs[clubRow][4]
 		 clubs[clubRow][5] = shotDistance;
 	
-	
+	alert("ClubMeNow version:1.0.0");
 	
 	
 	
