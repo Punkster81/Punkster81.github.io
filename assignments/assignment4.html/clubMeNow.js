@@ -95,6 +95,8 @@ function undoLastShot() {
         // your code here !
 	
 	
+	alert("ClubMeNow version:1.0.0");
+	
 	clubs = clubsUndo;
 	
 	currentAverage = clubs[clubRow][3];
@@ -111,7 +113,7 @@ function undoLastShot() {
 		 clubs[clubRow][4] = clubs[clubRow][4]
 		 clubs[clubRow][5] = shotDistance;
 	
-	alert("ClubMeNow version:1.0.0");
+	
 	
 	
 	
