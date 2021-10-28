@@ -95,7 +95,7 @@ function undoLastShot() {
         // your code here !
 	
 	
-	alert("ClubMeNow version:1.0.0");
+	alert("I cant figure out how to make this work");
 	
 	clubs = clubsUndo;
 	
