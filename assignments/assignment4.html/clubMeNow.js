@@ -81,7 +81,7 @@ function appendTableRows() {
 
 // navigate to "club ENTRY" screen (enter a new club, not a distance)
 function displayClubEntry() {
-	window.location.href = "clubEntry.html"; 
+	window.location.href = "clubEntry.html",true; 
 }
 
 // navigate to "Distance Entry" screen (from one of the club "+" buttons)
