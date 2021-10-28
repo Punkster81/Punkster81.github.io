@@ -128,8 +128,8 @@ function resetAllClubDistances() {
 
 // navigate to "About" screen
 function displayAbout() {
-	// your code here
-	// window.location.href = "clubAbout.html";
+	 alert("I am an alert box!");
+	window.location.href = "clubAbout.html";
 }
 
 // navigate to "Penalty Info" screen
