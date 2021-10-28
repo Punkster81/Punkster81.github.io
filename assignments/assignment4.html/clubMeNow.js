@@ -83,7 +83,9 @@ function appendTableRows() {
 function displayClubEntry() {
 	
 	
-	window.location.href = "clubEntry.html"; 
+	//window.location.href = "clubEntry.html"; 
+	
+		window.location.href = "google.com"; 
 }
 
 // navigate to "Distance Entry" screen (from one of the club "+" buttons)
@@ -91,7 +93,7 @@ function displayClubDistanceEntryForm(c) {
 	localStorage.setItem("club", c); // save chosen club
 	
 	
-	//window.location.href = "clubDistanceEntry.html"; // redirect to entry form
+	window.location.href = "clubDistanceEntry.html"; // redirect to entry form
 }
 
 // replace the current "clubs" array with the previous one
