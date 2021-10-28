@@ -128,7 +128,7 @@ function resetAllClubDistances() {
 
 // navigate to "About" screen
 function displayAbout() {
-	 alert("I am an alert box!");
+	 alert("ClubMeNow version:1.0.0");
 	
 }
 
