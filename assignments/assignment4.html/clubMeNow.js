@@ -84,7 +84,7 @@ function displayClubEntry() {
 	
 	
 	//window.location.href = "clubEntry.html"; 
-	
+	alert("ssgsgsg");
 		window.location.href = "google.com"; 
 }
 
