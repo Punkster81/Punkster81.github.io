@@ -129,7 +129,7 @@ function resetAllClubDistances() {
 // navigate to "About" screen
 function displayAbout() {
 	 alert("I am an alert box!");
-	window.location.href = "clubAbout.html";
+	
 }
 
 // navigate to "Penalty Info" screen
