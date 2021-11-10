@@ -254,8 +254,8 @@ for (let i=0; i<covidJsObj.Countries.length; i++) {
 //cars.unshift(car);
 
 
-let NewPopulations = Object.entries(populations);
-let Populations = [];
+//let NewPopulations = Object.entries(populations);
+//let Populations = [];
 
 
 
