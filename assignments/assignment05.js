@@ -86,15 +86,28 @@ function loadContent() {
       covidJsObj = JSON.parse(covidJson);
       newConfirmedOver1000 = [];
       
+      // convert object to 2d array
+var popArr = []
+for([p, v] of Object.entries(populations)) 
+  popArr.push([p, v])
+// console.log( popArr )
+      
+      
 	    for (let c of covidJsObj.Countries) {
         if (c.NewConfirmed > 5000) {
           newConfirmedOver1000.push({ 
             "Slug": c.Slug, 
             "NewConfirmed": c.NewConfirmed, 
-            "NewDeaths": c.NewDeaths
+            "NewDeaths": c.NewDeaths,
+            "Populations": popArr[c.Slug]
           });
         }
       }
+      
+      console.log(newConfirmedOver1000);
+      
+      
+      
       newConfirmedOver1000 = _.orderBy(newConfirmedOver1000, "NewDeaths", "desc");
 
       chartData.data.datasets[0].backgroundColor 
@@ -245,17 +258,11 @@ for (let i=0; i<covidJsObj.Countries.length; i++) {
   
 }
 */
-//let car = {
- // "color": "red",
-  //"type": "cabrio",
-  //"registration": new Date('2016-05-02'),
-//"capacity": 2
-//}
-//cars.unshift(car);
+loadContent();
 
 
-//let NewPopulations = Object.entries(populations);
-//let Populations = [];
+
+
 
 
 
