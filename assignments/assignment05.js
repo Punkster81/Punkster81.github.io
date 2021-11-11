@@ -92,14 +92,16 @@ for([p, v] of Object.entries(populations))
   popArr.push([p, v])
 // console.log( popArr )
       
-      
 	    for (let c of covidJsObj.Countries) {
         if (c.NewConfirmed > 5000) {
           newConfirmedOver1000.push({ 
             "Slug": c.Slug, 
             "NewConfirmed": c.NewConfirmed, 
             "NewDeaths": c.NewDeaths,
-            "Populations": popArr[c.Slug]
+            "TotalDeaths": c.TotalDeaths,
+            "Populations": popArr[c.Slug],
+            "TotalConfirmed": c.TotalConfirmed,
+	          "TotalConfirmedPer100000": Math.round(c.TotalConfirmed/popArr.filter(x => x[0] == c.Slug)[0][1] *100000)
           });
         }
       }
@@ -108,7 +110,7 @@ for([p, v] of Object.entries(populations))
       
       
       
-      newConfirmedOver1000 = _.orderBy(newConfirmedOver1000, "NewDeaths", "desc");
+      newConfirmedOver1000 = _.orderBy(newConfirmedOver1000, "TotalConfirmedPer100000", "desc");
 
       chartData.data.datasets[0].backgroundColor 
         = "rgba(100,100,100,0.4)"; // gray
