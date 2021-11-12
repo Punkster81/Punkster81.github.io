@@ -105,7 +105,7 @@ for([p, v] of Object.entries(populations))
             "TotalDeaths": c.TotalDeaths,
             "Populations": popArr[c.Slug],
             "TotalConfirmed": c.TotalConfirmed,
-	          "TotalConfirmedPer100000": Math.round(c.TotalConfirmed/popArr.filter(x => x[0] == c.Slug)[0][1] *100000)
+	   //       "TotalConfirmedPer100000": Math.round(c.TotalConfirmed/popArr.filter(x => x[0] == c.Slug)[0][1] *100000)
           });
         }
       }
