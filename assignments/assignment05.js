@@ -103,9 +103,9 @@ for([p, v] of Object.entries(populations))
             "NewConfirmed": c.NewConfirmed, 
             "NewDeaths": c.NewDeaths,
             "TotalDeaths": c.TotalDeaths,
-            "Populations": popArr[c.Slug],
+            "Populations": popArr[c.Slug], //POPULATIONS BROKE idk why its undefined
             "TotalConfirmed": c.TotalConfirmed,
-	   //       "TotalConfirmedPer100000": Math.round(c.TotalConfirmed/popArr.filter(x => x[0] == c.Slug)[0][1] *100000)
+	      //   "TotalConfirmedPer100000": Math.round(c.TotalConfirmed/popArr.filter(x => x[0] == c.Slug)[0][1] *100000)
           });
         }
       }
